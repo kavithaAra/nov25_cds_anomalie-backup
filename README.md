@@ -1,4 +1,4 @@
-Project Name
+Projet DataScientest : Détection d'anomalies dans des pièces industrielles
 ==============================
 
 This repo is a Starting Pack for DS projects. You can rearrange the structure to make it fits your project.
