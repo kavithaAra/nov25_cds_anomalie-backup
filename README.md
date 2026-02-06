@@ -3,9 +3,9 @@ Projet DataScientest : Détection d'anomalies dans des pièces industrielles
 
 This repo contains jupyter notebooks, reports and final models for our project.
 
-To create python enviroments for running different components of the project, different requirements.txt files will be provided:
-- requirements.txt : for running the final trained model and relevant visualisations
-- requirements\_skw32.txt : for running any notebooks by author skw32
+To create python environments for running different components of the project, different requirements.txt files will be provided:
+- requirements.txt: for running the final trained model and relevant visualisations
+- requirements\_skw32.txt: for running any notebooks by author skw32
 - (ask Karine and Makhlouf to add theres here too)
 
 Project Organization
