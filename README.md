@@ -11,6 +11,9 @@ To create python environments for running different components of the project, d
 Project Organization
 ------------
 
+* Les modèles avec segmentation entraînés  étant volumineux, ils ne sont pas stockés dans le dépôt GitHub. Ils sont disponibles via le lien Google Drive suivant: https://drive.google.com/drive/folders/1-NRbQwA5-CATleMWONc361DOFB_-7Qcs?usp=drive_link.
+  
+
     ├── LICENSE
     ├── README.md          <- The top-level README for developers using this project.
     ├── data               <- Should be in your computer but not on Github (only in .gitignore)
