@@ -7,7 +7,7 @@ To create python environments for running different components of the project, d
 - requirements.txt: for running the final trained model and relevant visualisations
 - requirements\_skw32.txt: for running any notebooks by author skw32
 - (ask Karine and Makhlouf to add theres here too)
-
+- Requirementes_makhlouf_hanouti ajouté 
 Project Organization
 ------------
 
