@@ -53,6 +53,12 @@ if page == pages[1] :
 if page == pages[2] : 
   # Suzy
   st.write("## Classification de type d'objet")
+  st.write("#### Détails du meilleur modèle")
+  st.markdown("- CNN architecture peu profonde (1 couche de convolution + 1 couche de pooling + 1 couche dense)")
+  st.markdown("- Taille d'images : 256x256")
+  st.markdown("- Early stopping callback pour éviter le surapprentissage")
+  st.markdown("- Ensemble de données d'entraînement (uniquement des images de classe bonne, sans défauts)")
+  st.markdown("- Ensemble de données de validation (mélange d'images de classe bonne et d'images défectueuses)")
   st.image('obj_classification_cm.png', caption="Matrice de confusion pour le classificateur de types d'objets multi-classes CNN", 
            width=800, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
@@ -73,6 +79,10 @@ if page == pages[2] :
                 'toothbrush', 'transistor', 'wood', 'zipper']
   st.write(f"Type d'objet prédit: {categories[pred_label]}")
   st.write(f"Probabilité : {proba} %")
+
+  st.write("#### Interprétabilité avec SHAP")
+  st.image('obj_classification_SHAP.png', caption="", 
+           width=900, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 
 
