@@ -43,10 +43,10 @@ if page == pages[0] :
   st.write("Total images test:", df_mvtec["Test (total)"].sum())
 
   st.write("### dataset MVTec AD:")
-  st.write("- Dataset de reference pour la detetction d'anomalie industrile par vision par ordinateur:")
-  st.write("-  15 categories industrielle")
-  st.write("-  10 d'objets")
-  st.write("-  5 de textures")
+  st.markdown("- Dataset de reference pour la detetction d'anomalie industrile par vision par ordinateur:")
+  st.markdown("-  15 categories industrielle")
+  st.markdown("-  10 d'objets")
+  st.markdown("-  5 de textures")
   st.image('repartition_train_test_global.png',
               caption="Répartition des images du dataset MVTec entre les dossiers train et test..", 
            width=500, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
