@@ -408,8 +408,9 @@ if page == pages[4] :
   st.write("### Interprétabilité (Grad-CAM)")
   with st.container():
     grad_slot = st.empty()  
-
-    gradcam_path = APP_DIR / chosen_img.replace(".png", "_gradcam.png")
+    st.write("APP_DIR : " + str(APP_DIR))
+    st.write("chosen_img : " + str(chosen_img))
+    gradcam_path = APP_DIR / str(chosen_img).replace(".png", "_gradcam.png")
     if gradcam_path.exists() and gradcam_path.stat().st_size > 0:
         with Image.open(gradcam_path) as im:
             grad_slot.image(im, caption="Grad-CAM", use_container_width=True)
@@ -504,7 +505,7 @@ if page == pages[4] :
   with st.container():
     grad_slot = st.empty()  
 
-    gradcam_path = APP_DIR / chosen_img.replace(".png", "_segmentation.png")
+    gradcam_path = APP_DIR / str(chosen_img).replace(".png", "_segmentation.png")
     if gradcam_path.exists() and gradcam_path.stat().st_size > 0:
         with Image.open(gradcam_path) as im:
             grad_slot.image(im, caption="Resultat de Segmentation", use_container_width=True)
@@ -569,6 +570,8 @@ if page == pages[5] :
   demo_img = preprocess_input(demo_img)
 
   prediction = loaded_model.predict(demo_img, verbose=0)
+  #st.write("Prédiction :" + str(prediction))
+  #st.write("Prédiction Shape :" + str(prediction.shape))
   pred_label = np.argmax(prediction, axis=-1)[0]
   proba = prediction[0][pred_label]* 100
   categories = ['bent_lead', 'cut_lead', 'damaged_case', 'good','misplaced']
