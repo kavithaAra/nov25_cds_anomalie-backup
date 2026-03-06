@@ -408,8 +408,8 @@ if page == pages[4] :
   st.write("### Interprétabilité (Grad-CAM)")
   with st.container():
     grad_slot = st.empty()  
-    st.write("APP_DIR : " + str(APP_DIR))
-    st.write("chosen_img : " + str(chosen_img))
+    #st.write("APP_DIR : " + str(APP_DIR))
+    #st.write("chosen_img : " + str(chosen_img))
     gradcam_path = APP_DIR / str(chosen_img).replace(".png", "_gradcam.png")
     if gradcam_path.exists() and gradcam_path.stat().st_size > 0:
         with Image.open(gradcam_path) as im:
